@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import Header from "./components/Header";
+import TinderCards from "./components/TinderCards";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       {/* header */}
       <Header />
       {/* tindercard */}
+      <TinderCards />
       {/* swipe button */}
     </div>
   );
@@ -22,3 +24,5 @@ export default App;
 //for icons --Material UI
 //npm install @mui/material @emotion/react @emotion/styled
 //npm install @mui/icons-material
+//for tinder card
+//npm i react-tinder-card
