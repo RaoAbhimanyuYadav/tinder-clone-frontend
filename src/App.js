@@ -1,19 +1,37 @@
 import "./App.css";
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import TinderCards from "./components/TinderCards";
 import SwipeButtons from "./components/SwipeButtons";
+import Login from "./components/Login";
 
 function App() {
   return (
-    <div className="app">
-      {/* header */}
-      <Header />
-      {/* tindercard */}
-      <TinderCards />
-      {/* swipe button */}
-      <SwipeButtons />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route
+            path="/home"
+            element={
+              <>
+                <TinderCards />
+                <SwipeButtons />
+              </>
+            }
+          />
+          <Route
+            path="/"
+            element={
+              <>
+                <Login />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
