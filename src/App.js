@@ -36,3 +36,30 @@ export default App;
 //go to bACKEND
 //to hook our backend install axios which make http request super simple
 //npm i axios
+
+//now we created new app on heroku
+//changed url in axios
+
+//now install firebase if not already installed
+//npm i -g firebase-tools
+//to  check version
+//firebase -V
+//to login
+//firebase login
+// firebase init
+//hosting
+//use existing project
+//What do you want to use as your public directory? (public) FOR THIS TYPE
+//build
+//single page application
+//yes
+//firebase deploy
+
+//if webpage show You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!
+
+//then goto firebase.json and replace
+//"public": "build"------>"public": "./build",
+
+//then  run
+//npm run build
+//firebase build
